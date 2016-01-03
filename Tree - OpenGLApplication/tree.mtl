@@ -1,0 +1,24 @@
+# Blender MTL File: 'christmas_tree_cycles.blend'
+# Material Count: 2
+
+newmtl branches
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd E:\Facultate\Anul 3\SPG\PROIECT\christmas_tree_blend\branch.png
+map_d E:\\Facultate\\Anul 3\\SPG\\PROIECT\\christmas_tree_blend\\branch.png
+
+newmtl trunk
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.060719 0.052889 0.016305
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
