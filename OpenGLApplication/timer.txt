@@ -1,0 +1,76 @@
+void animation() {
+	pas++;
+	if (pas <= 10) {
+		TransXYZ[2] += 0.1;
+	}
+	else if (pas >= 15 && pas <= 20) {
+		TransXYZ[1] += 0.1;
+	}
+	else if (pas >= 25 && pas <= 70) {
+		fGlobalAngleY += 1.0;
+		if (fGlobalAngleY > 360) {
+			fGlobalAngleY = -360;
+		}
+	}
+	else if (pas >= 80 && pas <= 170)
+	{
+		fGlobalAngleY -= 1.0;
+		if (fGlobalAngleY < -360) {
+			fGlobalAngleY = 360;
+		}
+	}
+
+	else if (pas >= 180 && pas <= 225) {
+		fGlobalAngleY += 1.0;
+		if (fGlobalAngleY > 360) {
+			fGlobalAngleY = -360;
+		}
+	}
+	else if (pas >= 235 && pas <= 276) {
+		TransXYZ[2] += 0.1;
+	}
+	
+	else if (pas >= 280 && pas <= 310){
+		TransXYZ[0] += 0.1;
+	}
+	else if (pas >= 320 && pas <= 400){
+		TransXYZ[2] += 0.1;
+	}
+	else if (pas >= 410 && pas <= 425){
+		TransXYZ[1] += 0.1;
+	}
+	else if (pas >= 435 && pas <= 465){
+		fGlobalAngleY -= 1.0;
+		if (fGlobalAngleY < -360) {
+			fGlobalAngleY = 360;
+		}
+	}
+	else if (pas >= 470 && pas <= 530){
+		fGlobalAngleY += 1.0;
+		if (fGlobalAngleY > 360) {
+			fGlobalAngleY = -360;
+		}
+	}
+	else if (pas >= 531) {
+		anim = false;
+	}
+
+}
+
+void Timer(int i) {
+
+	animation();
+
+	glutPostRedisplay();
+	if (anim) {
+		glutTimerFunc(50, Timer, 0);
+	}
+
+}
+
+
+case ';':
+		if (anim == true) {
+			Timer(pas);
+		}
+		break;
